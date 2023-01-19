@@ -51,6 +51,16 @@ bleServicesManager.startScanning()
 Detected devices will be notified to the provided `BLEServicesDelegate`'s method: `didDiscoverPeripheral(_ blePeripheral: BLEPeripheral)`. 
 Check [DemoApp](./DemoApp)  for additional functionality.
 
+---
+
+**IMPORTANT:**
+Your app will crash if its `Info.plist` doesn’t include the required usage description keys. To access Core Bluetooth APIs on apps linked on or after iOS 13, include the *Privacy – Bluetooth Always Usage Description* (`NSBluetoothAlwaysUsageDescription`) key.
+In addition you will also need to add the appropriate background mode (*Uses Bluetooth LE Accesories*) to the app target capabilities, as show here:
+
+![BLE-background-mode](https://user-images.githubusercontent.com/19808804/213567282-50cfd2e9-1c3f-4cef-a74e-f08f25438ac3.png)
+
+---
+
 
 ## Demo App
 The [DemoApp](./DemoApp) directory contains a sample application. It provides an example to explore the BLE Library features like:
