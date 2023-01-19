@@ -1,5 +1,5 @@
 # Bluelips
-A Bluetooth library that works as an interface/wrapper on top of Apple's [Core Bluetooth](https://developer.apple.com/documentation/corebluetooth)
+A Bluetooth library that works as an interface/wrapper on top of Apple's [Core Bluetooth](https://developer.apple.com/documentation/corebluetooth). If curious about the design behind this library see: [Bluelips Library Design](https://github.com/Dario-Gasquez/bluelips/wiki).<br>
 
 ## Requirements
 - iOS 13.0+
